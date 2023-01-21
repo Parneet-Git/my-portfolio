@@ -13,9 +13,6 @@
 
 .about .about-info{
     margin-left: 5.5rem;
-}
-
-.about .about-info{
     background: var(--black-color);
     color: var(--white-color);
     border-radius: 7px;
