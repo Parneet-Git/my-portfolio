@@ -1,38 +1,85 @@
-.App {
+@font-face {
+  font-family: 'Modern-font';
+  src: url('./assets/fonts/Orbitron/Orbitron-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Sans-bold-font';
+  src: url('./assets/fonts/Fredoka_One/FredokaOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Regular-font';
+  src: url('./assets/fonts/Comfortaa/static/Comfortaa-Regular.ttf');
+}
+
+:root {
+  --white-color: rgb(255, 255, 255);
+  --black-color: rgb(3, 82, 108);
+}
+
+/* :root {
+  --black-color: rgb(240, 240, 240);
+  --white-color: rgb(23, 23, 23);
+} */
+
+* {
+  font-family: 'Regular-font';
+}
+
+body {
+  background-color: var(--white-color);
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--black-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--white-color);
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+.heading {
+  writing-mode: vertical-rl;
+  transform: rotateZ(180deg);
+  font-size: 4rem;
+  font-family: 'Modern-font';
+  color: var(--black-color);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.scroll-down {
+  position: relative;
+  top: 90%;
+  left: 48%;
+  font-size: 2rem;
+  color: var(--black-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 1080px) {
+  .heading { 
+    font-size: 2.75rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 786px) {
+  body {
+    font-size: small;
   }
 }

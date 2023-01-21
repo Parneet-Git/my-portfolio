@@ -1,0 +1,86 @@
+.contact-container{
+    padding: 4rem 0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form{
+    margin: 0 8rem;
+    background-color: var(--black-color);
+    padding: 2rem;
+    border-radius: 14px;
+}
+
+.contact-form .input,
+.contact-form .textarea{
+    display: block;
+    margin: 2rem 0;
+    width: 40rem;
+    padding: 1rem;
+    background-color: var(--white-color);
+    outline: none;
+    border: 2px solid var(--black-color);
+    border-radius: 7px;
+    color: var(--black-color);
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.contact-form .input:focus,
+.contact-form .textarea:focus{
+    border-radius: 0px;
+}
+
+.contact-form .input::placeholder,
+.contact-form .textarea::placeholder{
+    color: var(--black-color);
+}
+
+@media only screen and (max-width: 1280px) {
+    .contact-container {
+        width: 90%;
+    }
+
+    .contact-form{
+        margin: 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .contact-container{
+        padding: 0;
+        margin-top: 4rem;
+    }
+
+    .contact-container .contact {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .contact-container .contact .heading {
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .contact-form {
+        padding: 0.5rem 1rem;
+    }
+
+    .contact-form .input:first-child {
+        margin-top: 0.5rem;
+    }
+
+    .contact-form .input,
+    .contact-form .textarea {
+        width: 80vw;
+    }
+}

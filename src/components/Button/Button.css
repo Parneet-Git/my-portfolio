@@ -1,0 +1,26 @@
+.btn{
+    all: unset;
+    border: 2px solid var(--black-color);
+    border-radius: 7px;
+    font-weight: bold;
+    color: var(--black-color);
+    padding: 0.8rem 1.75rem;
+    transition: all 0.3s;
+    background-color: var(--white-color);
+    width: max-content;
+}
+
+.btn:hover{
+    color: var(--white-color);
+    background-color: var(--black-color);
+    box-shadow: 0 0 10px var(--black-color);
+}
+
+.btn[disabled='true']{
+    background-color: grey;
+    color: black;
+}
+
+.btn:active{
+    scale: 0.9;
+}

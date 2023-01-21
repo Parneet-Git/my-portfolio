@@ -1,0 +1,112 @@
+.project-card{
+    padding: 1rem;
+    border: 1px solid var(--black-color);
+    color: var(--black-color);
+    background-color: var(--white-color);
+    width: 30rem;
+    border-radius: 14px;
+    transition: all 0.4s;
+}
+
+.project-card:hover{
+    border-radius: 0px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.project-card .title{
+    font-family: 'Sans-bold-font';
+    letter-spacing: 0.075rem;
+    font-size: large;
+}
+
+.project-card .desc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+}
+
+.project-card .image img{
+    width: 100%;
+    height: 15rem;
+    margin: 1rem 0;
+    border-radius: 14px;
+}
+
+.project-card .link-btns{
+    display: flex;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 1415px) {
+    .project-card {
+        width: 25rem;
+    }
+}
+
+@media only screen and (max-width: 885px) {
+    .project-card {
+        width: 22rem;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .project-card {
+        display: grid;
+        width: 90%;
+        margin: 0 auto;
+        grid-template-areas: 
+            " image card-info "
+            " image link-btns ";
+        grid-gap: 1rem;
+    }
+
+    .project-card .card-info{
+        grid-area: card-info;
+    }
+
+    .project-card .desc {
+        font-size: small;
+    }
+
+    .project-card .image{
+        grid-area: image;
+        order: -1;
+    }
+
+    .project-card .image img{
+        margin: 0;
+        width: 15rem;
+        height: 100%;
+        border-radius: 7px;
+    }
+
+    .project-card .link-btns {
+        grid-area: link-btns;
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    .project-card {
+        grid-template-areas: 
+        "image"
+        "card-info"
+        "link-btns";
+    }
+
+    .project-card .image img {
+        width: 100%;
+    }
+
+    .project-card .desc {
+        line-clamp: 6;
+        -webkit-line-clamp: 6;
+    }
+
+}
