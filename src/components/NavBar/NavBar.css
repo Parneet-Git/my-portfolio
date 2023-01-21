@@ -1,6 +1,6 @@
 .navbar-container{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     background: conic-gradient(var(--white-color) 0deg, var(--white-color) 90deg, var(--black-color) 90deg, var(--black-color) 180deg, var(--black-color) 180deg, var(--black-color) 270deg, var(--white-color) 270deg, var(--white-color) 360deg);
     color: var(--white-color);
     z-index: 100;
