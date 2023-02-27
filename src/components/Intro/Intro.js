@@ -22,7 +22,7 @@ const Intro = () => {
                 </div>
               </div>
               <div className="btns">
-                <Button name='Resume' link='https://drive.google.com/drive/u/0/folders/11JxftbJLv9IaB8xeZ7i1CsWXKp6qYNTr' newpage={true}/>
+                <Button name='Resume' link='https://drive.google.com/drive/folders/11JxftbJLv9IaB8xeZ7i1CsWXKp6qYNTr?usp=sharing' newpage={true}/>
                 <Button name='Hire Me !' link='#contact' newpage={false}/>
               </div>
             </div>
