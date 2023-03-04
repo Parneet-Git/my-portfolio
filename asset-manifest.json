@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.187c73a5.css",
+    "main.css": "/my-portfolio/static/css/main.4fcc07c2.css",
     "main.js": "/my-portfolio/static/js/main.1e7d668a.js",
     "static/media/books_site.png": "/my-portfolio/static/media/books_site.865f2344ca2c879f2ef4.png",
     "static/media/wiki_shows.png": "/my-portfolio/static/media/wiki_shows.3e44db5865442548c4e8.png",
@@ -13,11 +13,11 @@
     "static/media/FredokaOne-Regular.ttf": "/my-portfolio/static/media/FredokaOne-Regular.4aea26dd6637dfac0fac.ttf",
     "static/media/Orbitron-VariableFont_wght.ttf": "/my-portfolio/static/media/Orbitron-VariableFont_wght.453377cb91a4554c36ce.ttf",
     "index.html": "/my-portfolio/index.html",
-    "main.187c73a5.css.map": "/my-portfolio/static/css/main.187c73a5.css.map",
+    "main.4fcc07c2.css.map": "/my-portfolio/static/css/main.4fcc07c2.css.map",
     "main.1e7d668a.js.map": "/my-portfolio/static/js/main.1e7d668a.js.map"
   },
   "entrypoints": [
-    "static/css/main.187c73a5.css",
+    "static/css/main.4fcc07c2.css",
     "static/js/main.1e7d668a.js"
   ]
 }
